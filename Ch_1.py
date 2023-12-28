@@ -9,3 +9,5 @@ my_array.insert(2, "cantaloupe")		#my_array.insert(i, element) inserts the eleme
 my_array[3]		#Read	-instant 
 
 my_array["dates"]		#Search (N)
+
+my_set = {'a', 'b', 'c'}  #Sets can never contain a duplicate value
