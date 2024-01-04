@@ -6,6 +6,13 @@
 
 ###This is not really a hash map solution
 
+# Created a set since ``in`` works faster in a set. Sets have a built-in hash
+# table which makes lookups faster than in lists.
+
+# Not sure how to implement a hash table in python at least.
+
+#Try creating a hash table in javascript?
+
 def intersectionOfTwoArraysHashTable(array1, array2):
   
   intersection = []
@@ -21,9 +28,27 @@ def intersectionOfTwoArraysHashTable(array1, array2):
 intersectionOfTwoArraysHashTable([1, 2, 3, 4, 5], [0, 2, 4, 6, 8])
 
 
-# Created a set since ``in`` works faster in a set. Sets have a built-in hash
-# table which makes lookups faster than in lists.
+#### For this next version, it is pretty much the same
 
-# Not sure how to implement a hash table in python at least.
+# I realized that you need to use .get() or else you
+# will get a KeyError when the key doesn't exist.
 
-#Try creating a hash table in javascript?
+# .get([key], [default]) lets you return a default value
+# if no key exists
+
+def intersectionOfTwoArraysAttempt2(array1, array2):
+
+  intersection2 = []
+  my_hash_table = {}
+  
+  for num in array1:
+    my_hash_table[num] = True
+  
+  for num2 in array2:
+    if my_hash_table.get(num2, False):
+      intersection2.append(num2)
+  
+  return intersection2
+      
+
+print(intersectionOfTwoArraysAttempt2([1, 2, 3, 4, 5], [0, 2, 4, 6, 8]))

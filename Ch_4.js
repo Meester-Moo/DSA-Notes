@@ -9,7 +9,6 @@ function hasDuplicateValue(array) {
   return false;
 }
 
-
 function hasDuplicateValue(array) {
   let existingNumbers = [];
   for (let i = 0; i < array.length; i++) {
@@ -21,3 +20,7 @@ function hasDuplicateValue(array) {
   }
   return false;
 }
+
+//Pretty sure this example was showing that the top one was O(N^2)
+
+//VS the bottom one which is O(N)
