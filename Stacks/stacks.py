@@ -19,3 +19,17 @@ my_element = my_list.pop() #store popped item in a variable
 #stack = [3, 7]
 
 print(my_list)
+
+#add 5 and 2 back to the stack
+my_list.append(5)
+my_list.append(2)
+
+#peek, means to access a value without removing it from the stack
+print(my_list[-1])
+
+###### It turns out that in python to peek, you just access the index of the list.
+
+###### You can peek at the last element (the top of the stack) by doing my_list[-1]
+
+###### Remember that the right most element is the top of the stack, so it's like
+###### flipping the array counterclockwise 90 degrees.
