@@ -1,5 +1,6 @@
 
 #This function takes an array and doubles each number, using recursion.
+#The default parameter makes things look prettier.
 
                         #Uses a default parameter
 def double_array(array, index=0):
