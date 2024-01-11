@@ -14,7 +14,10 @@ def arraySum(array):
   ### each element in the array
   else:
     return array[0] + arraySum(array[1:])
-  ### This returns the first element plus
+  ### This returns the second element plus
+  ### all of the other elements
+  
+  ### This line returns
   ### a recursive stack of calls like this:
     ### array[0] + array[1]
     ### array[0] + array[2]
