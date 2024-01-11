@@ -18,14 +18,14 @@ def arraySum(array):
   ### all of the other elements
   
   ### This line returns
-  ### a recursive stack of calls like this:
-    ### array[0] + array[1]
-    ### array[0] + array[2]
-    ### array[0] + array[3]
-    ### array[0] + array[4]
-    ### array[0] + array[5]
+  ### a recursive stack of calls like this?:
+    ### call 1: array[0] + array[1]
+    ###   call 2: array[0] + array[2]
+    ###     call 3: array[0] + array[3]
+    ###       call 4: array[0] + array[4]
+    ###         call 5: array[0] + array[5]
     
-  ### in 
+  ###
   
 
 print(arraySum([1, 2, 3, 4, 5]))
